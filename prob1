@@ -1,0 +1,18 @@
+sudo dpkg --remove --force-remove-reinstreq python3-catkin-pkg-modules
+
+
+
+**** problem******
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ python3-bloom : Depends: python3-catkin-pkg (>= 0.4.3) but it is not going to be installed
+ python3-colcon-ros : Depends: python3-catkin-pkg-modules (>= 0.4.14) but it is not going to be installed or
+                               python3-catkin-pkg (>= 0.4.14) but it is not going to be installed
+ python3-rosdep-modules : Depends: python3-catkin-pkg-modules (>= 0.4.0) but it is not going to be installed
+ python3-rosdistro-modules : Depends: python3-catkin-pkg-modules but it is not going to be installed
+ python3-rospkg-modules : Depends: python3-catkin-pkg-modules but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+
+*****************solution?**************
+sudo apt --fix-broken install                    ===> no
+
